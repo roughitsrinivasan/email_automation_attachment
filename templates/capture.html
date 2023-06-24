@@ -49,8 +49,13 @@
             <div class="formbg-outer" style="width: 70%;">
               <img src="{{ url_for('video_feed') }}" height="80%">
               <form method="post" action="/requests">
+                <input type="hidden" name="t_email" value="{{t_email}}" />
+                <input type="hidden" name="name" value="{{name}}" />
                 <!-- <input type="submit" value="Stop/Start" name="stop" /> -->
                 <input type="submit" value="Capture" name="click"/>
+                {{t_email}}
+                {{name}}
+                
                 <!-- <input type="submit" value="Grey" name="grey" />
                 <input type="submit" value="Negative" name="neg" />
                 <input type="submit" value="Face Only" name="face" />
